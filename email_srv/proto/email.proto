@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option go_package = ".;srv";
+
+service EmailSrv {
+    rpc SendCode (Email) returns (google.protobuf.Empty);;
+}
+
+message Email {
+    string email = 1;
+    string subject = 2;
+    string msg = 3;
+    string code = 4;
+    int64 expire = 5;
+}

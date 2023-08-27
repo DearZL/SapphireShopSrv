@@ -1,0 +1,31 @@
+
+app:
+  mode: debug
+  host: 127.0.0.1
+  port: 8080
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+
+userDB:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 123456
+  name: shop_user_srv
+
+emailConfig:
+  server: smtp.qq.com
+  port: 587
+  username:
+  key:
+
+userServer:
+  host: 127.0.0.1
+  port: 9090
+
+emailServer:
+  host: 127.0.0.1
+  port: 9091
