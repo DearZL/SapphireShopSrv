@@ -1,5 +1,7 @@
 package model
 
+import "SapphireShop/SapphireShop_srv/user_srv/proto/srv"
+
 func UserToResp(user User) *srv.UserInfoResponse {
 	userInfoResp := &srv.UserInfoResponse{
 		Id:        user.Id,
